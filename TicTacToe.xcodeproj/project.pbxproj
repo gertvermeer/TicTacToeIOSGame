@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		DBB5149B2569144E00BEC5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB5149A2569144E00BEC5AA /* AppDelegate.swift */; };
 		DBB5149D2569144E00BEC5AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB5149C2569144E00BEC5AA /* SceneDelegate.swift */; };
-		DBB5149F2569144E00BEC5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB5149E2569144E00BEC5AA /* ViewController.swift */; };
 		DBB514A22569144E00BEC5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB514A02569144E00BEC5AA /* Main.storyboard */; };
 		DBB514A42569145000BEC5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB514A32569145000BEC5AA /* Assets.xcassets */; };
 		DBB514A72569145000BEC5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB514A52569145000BEC5AA /* LaunchScreen.storyboard */; };
+		DBB514B3256914D400BEC5AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB514B2256914D400BEC5AA /* ViewController.swift */; };
+		DBB514B7256914E400BEC5AA /* blockCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB514B6256914E400BEC5AA /* blockCollectionView.swift */; };
+		DBB514BA2569285200BEC5AA /* WinLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB514B92569285200BEC5AA /* WinLine.swift */; };
+		DBB514BD2569286500BEC5AA /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB514BC2569286500BEC5AA /* ScoreController.swift */; };
+		DBB514C025692A2A00BEC5AA /* MinMaxAnalyser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB514BF25692A2A00BEC5AA /* MinMaxAnalyser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBB514972569144E00BEC5AA /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB5149A2569144E00BEC5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB5149C2569144E00BEC5AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBB5149E2569144E00BEC5AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBB514A12569144E00BEC5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBB514A32569145000BEC5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB514A62569145000BEC5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBB514A82569145000BEC5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB514B2256914D400BEC5AA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Mobile Documents/com~apple~CloudDocs/Gert/IOS/Sudoko2/TicTacToe/ViewController.swift"; sourceTree = "<group>"; };
+		DBB514B6256914E400BEC5AA /* blockCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blockCollectionView.swift; sourceTree = "<group>"; };
+		DBB514B92569285200BEC5AA /* WinLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinLine.swift; sourceTree = "<group>"; };
+		DBB514BC2569286500BEC5AA /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
+		DBB514BF25692A2A00BEC5AA /* MinMaxAnalyser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMaxAnalyser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				DBB5149A2569144E00BEC5AA /* AppDelegate.swift */,
+				DBB514BF25692A2A00BEC5AA /* MinMaxAnalyser.swift */,
 				DBB5149C2569144E00BEC5AA /* SceneDelegate.swift */,
-				DBB5149E2569144E00BEC5AA /* ViewController.swift */,
+				DBB514B6256914E400BEC5AA /* blockCollectionView.swift */,
+				DBB514B2256914D400BEC5AA /* ViewController.swift */,
 				DBB514A02569144E00BEC5AA /* Main.storyboard */,
+				DBB514BC2569286500BEC5AA /* ScoreController.swift */,
 				DBB514A32569145000BEC5AA /* Assets.xcassets */,
+				DBB514B92569285200BEC5AA /* WinLine.swift */,
 				DBB514A52569145000BEC5AA /* LaunchScreen.storyboard */,
 				DBB514A82569145000BEC5AA /* Info.plist */,
 			);
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB5149F2569144E00BEC5AA /* ViewController.swift in Sources */,
 				DBB5149B2569144E00BEC5AA /* AppDelegate.swift in Sources */,
+				DBB514B3256914D400BEC5AA /* ViewController.swift in Sources */,
+				DBB514BD2569286500BEC5AA /* ScoreController.swift in Sources */,
+				DBB514BA2569285200BEC5AA /* WinLine.swift in Sources */,
+				DBB514B7256914E400BEC5AA /* blockCollectionView.swift in Sources */,
 				DBB5149D2569144E00BEC5AA /* SceneDelegate.swift in Sources */,
+				DBB514C025692A2A00BEC5AA /* MinMaxAnalyser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
